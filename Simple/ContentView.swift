@@ -6,32 +6,32 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
     var body: some View {
-        ScrollView{
-            VStack(alignment: .leading){
-                OnePicture(imageName: "closedUsj", imageTitle: "Closed USJ", imageDescription: "Because of the COVID19, the theme park was forced to close.")
-                OnePicture(imageName: "cinemaPark", imageTitle: "Cinema Park", imageDescription: "USJ is opend as Japanese cinema park.")
-                HStack{
-                    Image("universalCityWalk1")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    VStack(alignment: .leading){
-                        Text("They booked the trip before.").font(.title)
-                        Text("I met a couple, they planned the trip before COVID19. Unfortunately USJ has closed.")
-                    }
-                }
-                HStack{
-                    Image("universalCityWalk2")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    VStack(alignment: .leading){
-                        Text("No one there then").font(.title)
-                        Text("Usually here Universal City Walk is filled with plenty of USJ fans.")
+        NavigationView{
+            ScrollView{
+                VStack(alignment: .leading){
+                    ForEach (pictures){ picture in
+                        PictureView(picture: picture)
                     }
                 }
             }
+            .navigationTitle(Text("Gallery")) // put navigation bar title
+            .navigationBarItems(trailing: // put button on navigation bar
+                                    HStack {
+                                        Button(action: {
+                                            print("plus tapped!")
+                                        }) {
+                                            Image(systemName: "plus")
+                                        }
+                                        
+                                        Button("edit") {
+                                            print("edit tapped!")
+                                        }
+                                    }
+            )
         }
     }
 }

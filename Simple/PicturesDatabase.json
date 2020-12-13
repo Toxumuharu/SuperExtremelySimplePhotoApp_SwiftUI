@@ -1,0 +1,25 @@
+
+[
+    {
+        "id": 1001,
+        "imageName": "closedUsj",
+        "imageTitle": "Closed USJ",
+        "imageDescription": "Because of the COVID19, the theme park was forced to close."
+    },
+    {
+        "id": 1002,
+        "imageName": "cinemaPark",
+        "imageTitle": "Cinema Park",
+        "imageDescription": "USJ is opend as Japanese cinema park."
+    },
+    {"id": 1003,
+        "imageName": "universalCityWalk1",
+        "imageTitle": "They booked the trip before.",
+        "imageDescription": "I met a couple, they planned the trip before COVID19. Unfortunately USJ has closed."
+    },
+    {"id": 1004,
+        "imageName": "universalCityWalk2",
+        "imageTitle": "No one there then",
+        "imageDescription": "Usually here Universal City Walk is filled with plenty of USJ fans."
+    }
+]
