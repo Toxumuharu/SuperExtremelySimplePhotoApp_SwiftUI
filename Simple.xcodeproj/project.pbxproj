@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E177946259C2E38006E83F9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E177945259C2E38006E83F9 /* ImagePicker.swift */; };
 		3E18FF22258F852D00DA9D34 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E18FF21258F852D00DA9D34 /* ModelData.swift */; };
 		3E18FF2A258F85F700DA9D34 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E18FF29258F85F700DA9D34 /* Picture.swift */; };
 		3E2345DC253DED5300A3160A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2345DB253DED5300A3160A /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E177945259C2E38006E83F9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3E18FF21258F852D00DA9D34 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3E18FF29258F85F700DA9D34 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		3E2345D8253DED5300A3160A /* Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 				3E2345DF253DED5300A3160A /* ContentView.swift */,
 				3E8C128C258F7FCB00092370 /* PictureView.swift */,
 				3E18FF29258F85F700DA9D34 /* Picture.swift */,
+				3E177945259C2E38006E83F9 /* ImagePicker.swift */,
 				3E18FF21258F852D00DA9D34 /* ModelData.swift */,
 				3E8C1287258F346200092370 /* PicturesDatabase.json */,
 				3E2345E4253DED5700A3160A /* Assets.xcassets */,
@@ -287,6 +290,7 @@
 				3E2345E3253DED5300A3160A /* Simple.xcdatamodeld in Sources */,
 				3E2345DE253DED5300A3160A /* SceneDelegate.swift in Sources */,
 				3E2345E0253DED5300A3160A /* ContentView.swift in Sources */,
+				3E177946259C2E38006E83F9 /* ImagePicker.swift in Sources */,
 				3E8C128D258F7FCB00092370 /* PictureView.swift in Sources */,
 				3E18FF22258F852D00DA9D34 /* ModelData.swift in Sources */,
 			);

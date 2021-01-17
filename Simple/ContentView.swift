@@ -9,6 +9,10 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
+    @State private var isShowPhotoLibrary = false
+    @State private var image: Image? = nil
+    var picture: Picture? = nil
+    
     var body: some View {
         NavigationView{
             ScrollView{
@@ -22,11 +26,16 @@ struct ContentView: View {
             .navigationBarItems(trailing: // put button on navigation bar
                                     HStack {
                                         Button(action: {
-                                            print("plus tapped!")
+                                            self.isShowPhotoLibrary.toggle()
                                         }) {
                                             Image(systemName: "plus")
                                         }
-                                        
+                                        .sheet(isPresented: $isShowPhotoLibrary) {
+                                            ImagePicker(sourceType: .photoLibrary) { image in
+                                                self.image = Image(uiImage: image)
+                                                picture.
+                                            }
+                                        }
                                         Button("edit") {
                                             print("edit tapped!")
                                         }
